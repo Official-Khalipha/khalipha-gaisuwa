@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHALIPHA | Gaisuwa</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Space Grotesk',sans-serif}
+body{
+  background:#0a0a0a; color:white;
+  min-height:100vh; display:flex; justify-content:center; align-items:center;
+  background: radial-gradient(circle at 30% 20%, #00ff88 0%, transparent 40%),
+              radial-gradient(circle at 80% 80%, #0066ff 0%, transparent 40%),
+              #0a0a0a;
+}
+.card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:40px 30px; border-radius:30px;
+  width:90%; max-width:400px; text-align:center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.card h1{font-size:28px; margin-bottom:8px}
+.card p{color:#aaa; margin-bottom:25px; font-size:14px}
+.input-box{
+  background:rgba(0,0,0,0.5); border-radius:15px;
+  display:flex; align-items:center; padding:5px; 
+  border:1px solid rgba(255,255,255,0.1);
+}
+.input-box input{
+  background:transparent; border:none; outline:none;
+  color:white; padding:15px; flex:1; font-size:16px;
+}
+.input-box button{
+  background:#00ff88; border:none; padding:12px 20px;
+  border-radius:12px; font-weight:bold; cursor:pointer;
+  transition:0.2s;
+}
+.input-box button:active{transform:scale(0.9)}
+#amsa{
+  margin-top:25px; font-size:22px; font-weight:700;
+  min-height:30px; color:#00ff88;
+  animation: pop 0.3s ease;
+}
+@keyframes pop {0%{transform:scale(0.8); opacity:0} 100%{transform:scale(1); opacity:1}}
+.badge{font-size:11px; letter-spacing:2px; color:#00ff88; background:rgba(0,255,136,0.1); padding:6px 12px; border-radius:20px; display:inline-block; margin-bottom:15px}
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="badge">FULL-STACK PROJECT</span>
+  <h1>Shafin Gaisuwa 👋</h1>
+  <p>Daga Khalipha - An gina da Node.js</p>
+  
+  <div class="input-box">
+    <input id="suna" placeholder="Sunanka?">
+    <button onclick="gaishe()">Gaishe ni →</button>
+  </div>
+
+  <div id="amsa"></div>
+</div>
+
+<script>
+async function gaishe(){
+  const suna = document.getElementById('suna').value;
+  if(!suna) return;
+  const el = document.getElementById('amsa');
+  el.innerText = '...';
+  const res = await fetch(`/gaishe/${suna}`);
+  const data = await res.json();
+  el.innerText = data.sakon;
+  el.style.animation='none'; el.offsetHeight; el.style.animation='pop 0.3s ease';
+}
+document.getElementById('suna').addEventListener('keypress', (e)=>{
+  if(e.key==='Enter') gaishe();
+});
+</script>
+</body>
+</html>
