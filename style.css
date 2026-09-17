@@ -238,14 +238,20 @@ body{
 .header h1{font-size:34px}
 }
 
-/* 5. Desktop > 1025px */
+/* 5. Desktop > 1025px - GYARAN LOGO */
 @media(min-width:1025px){
-.logo{width:110px;height:110px;border-width:3px} /* Babbar logo kamar kake so */
-.sunan{font-size:28px;letter-spacing:1px}
-.taken{font-size:15px}
-.head{padding:18px 20px}
-.head-buttons a{padding:9px 18px;font-size:14px}
-.card{max-width:850px;margin:20px auto;padding:28px}
-.header h1{font-size:38px}
+.logo{
+  width:135px; /* NA KARA DAGA 110px ZUWA 135px */
+  height:135px;
+  border-width:3px;
+  border-color:#d4af37;
+}
+.sunan{font-size:30px;letter-spacing:1px}
+.taken{font-size:16px}
+.head{padding:20px 25px}
+.head-top{max-width:1300px} /* Na kara fadi */
+.head-buttons a{padding:10px 20px;font-size:14px}
+.card{max-width:900px;margin:22px auto;padding:28px}
+.header h1{font-size:40px}
 .arabic{font-size:28px}
-  }
+}
