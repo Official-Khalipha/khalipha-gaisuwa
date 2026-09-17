@@ -55,7 +55,7 @@ try{
   const hijriClean = hijriRaw.replace(' AH','').replace(' BC','').trim();
   document.getElementById('hijri-date').innerText = "☪️ " + hijriClean + " AH";
 }catch(e){
-  // Fallback idan wayar ta gagara
-  document.getElementById('greg-date').innerText = "📅 " + today.toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-  document.getElementById('hijri-date').innerText = "☪️ 25 Rabi' al-Awwal 1448 AH";
-    }
+  // Fallback idan wayar ta gagara 
+document.getElementById('greg-date').innerText = "📅 "+today.toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+document.getElementById('hijri-date').innerText = "☪️ "+new Intl.DateTimeFormat('en-SA-u-ca-islamic-umalqura',{day:'numeric',month:'long',year:'numeric'}).format(today).replace(' AH','')+" AH";
+}
