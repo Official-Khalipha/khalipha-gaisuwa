@@ -241,13 +241,13 @@ body{
 /* 5. Desktop > 1025px - GYARAN LOGO */
 @media(min-width:1025px){
 .logo{
-  width:135px; /* NA KARA DAGA 110px ZUWA 135px */
-  height:135px;
+  width:200px; /* NA KARA DAGA 110px ZUWA 135px */
+  height:200px;
   border-width:3px;
   border-color:#d4af37;
 }
-.sunan{font-size:30px;letter-spacing:1px}
-.taken{font-size:16px}
+.sunan{font-size:38px;letter-spacing:1px}
+.taken{font-size:20px}
 .head{padding:20px 25px}
 .head-top{max-width:1300px} /* Na kara fadi */
 .head-buttons a{padding:10px 20px;font-size:14px}
