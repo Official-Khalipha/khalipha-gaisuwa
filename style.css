@@ -118,13 +118,13 @@ body{
   margin:0 auto
 }
 .logo{
-  width:100px; /* Girman logo a waya */
-  height:100px;
+  width:90px; /* Girman logo a waya */
+  height:90px;
   object-fit:contain; /* Kada ya murde */
   background:transparent!important; /* Cire farin baya */
   border-radius:50%; /* Da'irar */
   border:2px solid rgba(212,175,55,0.8); /* Zinare a gefe */
-  padding:3px;
+  padding:1px;
   flex-shrink:0 /* Kada ya matse */
 }
 .head-center{
