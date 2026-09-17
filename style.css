@@ -16,7 +16,7 @@ body{margin:0;font-family:'Inter',sans-serif;background:#f6f7f0;color:#1a3d2e}
 /* === 4. SABON HEADER - KAMAR ZANE === */
 .head{background:linear-gradient(135deg,#0d2818,#1a5c36);color:white;padding:16px 12px 14px;border-bottom:4px solid #d4af37;border-radius:0 0 22px 22px;box-shadow:0 6px 18px rgba(0,0,0,0.2);position:sticky;top:0;z-index:1000}
 .head-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.logo{width:62px;height:62px;object-fit:contain;background:transparent!important;border-radius:50%;border:2px solid rgba(212,175,55,0.6);padding:3px;flex-shrink:0}
+.logo{width:110px;height:110px;object-fit:contain;background:transparent!important;border-radius:50%;border:2px solid #d4af37;padding:5px;flex-shrink:0}
 .head-center{flex:1;text-align:center;padding:0 8px}
 .sunan{font-size:20px;font-weight:900;line-height:1.1;text-transform:uppercase}
 .taken{font-size:12px;margin-top:4px;color:#d4af37;opacity:0.95;font-style:italic}
