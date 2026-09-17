@@ -1,30 +1,251 @@
-/* === 1. BODY === */
-body{margin:0;font-family:'Inter',sans-serif;background:#f6f7f0;color:#1a3d2e}
-/* === 2. BISIMILLAH === */
-.header{background:linear-gradient(135deg,#0d2818,#1a5c36);color:white;padding:25px;text-align:center;border-bottom:4px solid #d4af37}
-.header h1{font-family:'Amiri',serif;font-size:32px;margin:0}
-/* === 3. CARDS === */
-.card{background:white;margin:15px;border-radius:16px;padding:20px;box-shadow:0 4px 15px rgba(0,0,0,0.07);border-right:5px solid #1a5c36}
-.arabic{font-family:'Amiri',serif;font-size:26px;text-align:right;line-height:1.8;color:#0d2818;direction:rtl}
-.hausa{font-size:16px;color:#444;margin-top:10px;line-height:1.6}
-.badge{display:inline-block;background:#e8f5e9;color:#1a5c36;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:bold;margin-bottom:10px}
-.prayer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;text-align:center}
-.prayer-box{background:#f1f8e9;padding:10px;border-radius:10px}
+/* =========================================
+   HASKE NA MUSULUNCI - STYLE.CSS
+   Mai shi: Khalipha Gaisuwa
+   Date: 2026
+   ========================================= */
+
+/* === 1. BASE - Tushen shafi gaba daya === */
+*{box-sizing:border-box} /* Duk abu ya lissafo border a ciki */
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f6f7f0; /* Launin bayan fari mai haske */
+  color:#1a3d2e;
+  overflow-x:hidden /* Kada shafi ya zame a gefe a waya */
+}
+
+/* === 2. BISIMILLAH HEADER - Rubutun Bismillah === */
+.header{
+  background:linear-gradient(135deg,#0d2818,#1a5c36); /* Koren duhu */
+  color:white;
+  padding:20px 12px;
+  text-align:center;
+  border-bottom:4px solid #d4af37 /* Layin zinare a kasa */
+}
+.header h1{
+  font-family:'Amiri',serif;
+  font-size:26px;
+  margin:0;
+  word-wrap:break-word; /* Kada larabci ya fita */
+  line-height:1.6
+}
+
+/* === 3. CARDS - Katin Ayah, Hadisi, Sallah === */
+.card{
+  background:white;
+  margin:12px auto; /* auto = ya tsaya a tsakiya a laptop */
+  border-radius:16px; /* Kusurwa mai lankwasa */
+  padding:16px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.07);
+  border-right:5px solid #1a5c36; /* Layin kore a dama */
+  overflow:hidden;
+  max-width:700px /* Kar ya yi fadi sosai a desktop */
+}
+.arabic{
+  font-family:'Amiri',serif;
+  font-size:22px;
+  text-align:right;
+  line-height:1.8;
+  color:#0d2818;
+  direction:rtl; /* Daga dama zuwa hagu */
+  word-wrap:break-word
+}
+.hausa{
+  font-size:15px;
+  color:#444;
+  margin-top:10px;
+  line-height:1.6;
+  word-wrap:break-word
+}
+.badge{
+  display:inline-block;
+  background:#e8f5e9; /* Kore mai haske */
+  color:#1a5c36;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+  margin-bottom:10px
+}
+.prayer-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr; /* Raba 3 a jere */
+  gap:8px;
+  text-align:center
+}
+.prayer-box{
+  background:#f1f8e9;
+  padding:10px;
+  border-radius:10px
+}
 .prayer-box b{display:block;color:#1a5c36}
-.tasbih-btn{background:#1a5c36;color:white;border:none;width:120px;height:120px;border-radius:50%;font-size:40px;box-shadow:0 5px 15px rgba(26,92,54,0.4)}
-.btn-reset{margin-top:15px;background:none;border:1px solid #ccc;padding:5px 15px;border-radius:20px}
-/* === 4. SABON HEADER - KAMAR ZANE === */
-.head{background:linear-gradient(135deg,#0d2818,#1a5c36);color:white;padding:16px 12px 14px;border-bottom:4px solid #d4af37;border-radius:0 0 22px 22px;box-shadow:0 6px 18px rgba(0,0,0,0.2);position:sticky;top:0;z-index:1000}
-.head-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.logo{width:110px;height:110px;object-fit:contain;background:transparent!important;border-radius:50%;border:2px solid #d4af37;padding:5px;flex-shrink:0}
-.head-center{flex:1;text-align:center;padding:0 8px}
-.sunan{font-size:20px;font-weight:900;line-height:1.1;text-transform:uppercase}
-.taken{font-size:12px;margin-top:4px;color:#d4af37;opacity:0.95;font-style:italic}
-.head-buttons{margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.head-buttons a{background:rgba(255,255,255,0.1);border:1px solid rgba(212,175,55,0.35);color:white;padding:7px 14px;border-radius:999px;text-decoration:none;font-size:12.5px;font-weight:700;white-space:nowrap}
-.head-buttons a:hover{background:#d4af37;color:#0d2818}
-/* === 5. DATE & FOOTER === */
-.date-bar{background:#fff8e1;padding:8px 15px;display:flex;justify-content:space-between;font-size:12px;border-bottom:1px solid #f0e0a0}
-.footer-modern{background:#0d2818;color:#ccc;padding:30px 20px;margin-top:20px;text-align:center}
-.footer-modern h3{color:#d4af37;margin:0 0 5px 0;font-family:'Amiri',serif}
-.footer-modern p{font-size:13px;line-height:1.6;margin:5px 0}
+.tasbih-btn{
+  background:#1a5c36;
+  color:white;
+  border:none;
+  width:120px;
+  height:120px;
+  border-radius:50%; /* Da'irar tasbih */
+  font-size:40px;
+  box-shadow:0 5px 15px rgba(26,92,54,0.4)
+}
+.btn-reset{
+  margin-top:15px;
+  background:none;
+  border:1px solid #ccc;
+  padding:5px 15px;
+  border-radius:20px
+}
+
+/* === 4. HEADER - Sabon head da logo 2 === */
+.head{
+  background:linear-gradient(135deg,#0d2818,#1a5c36);
+  color:white;
+  padding:12px 8px 14px;
+  border-bottom:4px solid #d4af37;
+  border-radius:0 0 22px 22px; /* Lankwasa a kasa kawai */
+  box-shadow:0 6px 18px rgba(0,0,0,0.2);
+  position:sticky; /* Ya tsaya a sama idan ana scrolling */
+  top:0;
+  z-index:1000
+}
+.head-top{
+  display:flex; /* Logo hagu - suna tsakiya - logo dama */
+  align-items:center;
+  justify-content:space-between;
+  gap:6px;
+  max-width:1100px; /* Kar ya wuce 1100px a desktop */
+  margin:0 auto
+}
+.logo{
+  width:68px; /* Girman logo a waya */
+  height:68px;
+  object-fit:contain; /* Kada ya murde */
+  background:transparent!important; /* Cire farin baya */
+  border-radius:50%; /* Da'irar */
+  border:2px solid rgba(212,175,55,0.8); /* Zinare a gefe */
+  padding:3px;
+  flex-shrink:0 /* Kada ya matse */
+}
+.head-center{
+  flex:1;
+  text-align:center;
+  min-width:0;
+  padding:0 4px
+}
+.sunan{
+  font-size:15px;
+  font-weight:900;
+  line-height:1.1;
+  text-transform:uppercase
+}
+.taken{
+  font-size:10px;
+  margin-top:3px;
+  color:#d4af37; /* Zinare */
+  font-style:italic
+}
+.head-buttons{
+  margin-top:12px;
+  display:flex;
+  gap:6px;
+  justify-content:center;
+  flex-wrap:wrap; /* Idan sun cika su sauka kasa */
+  max-width:1100px;
+  margin-left:auto;
+  margin-right:auto
+}
+.head-buttons a{
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(212,175,55,0.4);
+  color:white;
+  padding:6px 12px;
+  border-radius:999px; /* Kamar kwaya */
+  text-decoration:none;
+  font-size:12px;
+  font-weight:700;
+  white-space:nowrap
+}
+
+/* === 5. DATE BAR & FOOTER === */
+.date-bar{
+  background:#fff8e1; /* Rawaya mai haske */
+  padding:8px 10px;
+  display:flex;
+  justify-content:space-between;
+  gap:5px;
+  font-size:11px;
+  border-bottom:1px solid #f0e0a0;
+  flex-wrap:wrap;
+  max-width:1100px;
+  margin:0 auto
+}
+.footer-modern{
+  background:#0d2818;
+  color:#ccc;
+  padding:25px 15px;
+  margin-top:20px;
+  text-align:center
+}
+.footer-modern h3{
+  color:#d4af37;
+  margin:0 0 5px 0;
+  font-family:'Amiri',serif;
+  font-size:16px
+}
+.footer-modern p{
+  font-size:12px;
+  line-height:1.5;
+  margin:5px 0;
+  word-wrap:break-word
+}
+
+/* =========================================
+   6. RESPONSIVE - Daidaita da kowanne na'ura
+   ========================================= */
+
+/* 1. Karamar Waya < 360px */
+@media(max-width:360px){
+.logo{width:52px;height:52px} /* Karamar logo */
+.sunan{font-size:12px}
+.header h1{font-size:20px}
+.prayer-grid{grid-template-columns:1fr 1fr} /* Sallah 2 a jere */
+}
+
+/* 2. Waya ta yau 361px - 480px */
+@media(min-width:361px) and (max-width:480px){
+.logo{width:65px;height:65px}
+.sunan{font-size:14px}
+}
+
+/* 3. Tablet 481px - 768px */
+@media(min-width:481px) and (max-width:768px){
+.logo{width:80px;height:80px}
+.sunan{font-size:20px}
+.taken{font-size:13px}
+.header h1{font-size:30px}
+.card{margin:16px auto;padding:22px}
+.prayer-grid{grid-template-columns:repeat(6,1fr)} /* Sallah 6 a jere */
+}
+
+/* 4. Laptop 769px - 1024px */
+@media(min-width:769px) and (max-width:1024px){
+.logo{width:90px;height:90px}
+.sunan{font-size:24px}
+.taken{font-size:14px}
+.head{padding:16px}
+.card{max-width:800px;margin:18px auto}
+.header h1{font-size:34px}
+}
+
+/* 5. Desktop > 1025px */
+@media(min-width:1025px){
+.logo{width:110px;height:110px;border-width:3px} /* Babbar logo kamar kake so */
+.sunan{font-size:28px;letter-spacing:1px}
+.taken{font-size:15px}
+.head{padding:18px 20px}
+.head-buttons a{padding:9px 18px;font-size:14px}
+.card{max-width:850px;margin:20px auto;padding:28px}
+.header h1{font-size:38px}
+.arabic{font-size:28px}
+  }
