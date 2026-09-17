@@ -1,0 +1,30 @@
+/* === 1. BODY === */
+body{margin:0;font-family:'Inter',sans-serif;background:#f6f7f0;color:#1a3d2e}
+/* === 2. BISIMILLAH === */
+.header{background:linear-gradient(135deg,#0d2818,#1a5c36);color:white;padding:25px;text-align:center;border-bottom:4px solid #d4af37}
+.header h1{font-family:'Amiri',serif;font-size:32px;margin:0}
+/* === 3. CARDS === */
+.card{background:white;margin:15px;border-radius:16px;padding:20px;box-shadow:0 4px 15px rgba(0,0,0,0.07);border-right:5px solid #1a5c36}
+.arabic{font-family:'Amiri',serif;font-size:26px;text-align:right;line-height:1.8;color:#0d2818;direction:rtl}
+.hausa{font-size:16px;color:#444;margin-top:10px;line-height:1.6}
+.badge{display:inline-block;background:#e8f5e9;color:#1a5c36;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:bold;margin-bottom:10px}
+.prayer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;text-align:center}
+.prayer-box{background:#f1f8e9;padding:10px;border-radius:10px}
+.prayer-box b{display:block;color:#1a5c36}
+.tasbih-btn{background:#1a5c36;color:white;border:none;width:120px;height:120px;border-radius:50%;font-size:40px;box-shadow:0 5px 15px rgba(26,92,54,0.4)}
+.btn-reset{margin-top:15px;background:none;border:1px solid #ccc;padding:5px 15px;border-radius:20px}
+/* === 4. SABON HEADER - KAMAR ZANE === */
+.head{background:linear-gradient(135deg,#0d2818,#1a5c36);color:white;padding:16px 12px 14px;border-bottom:4px solid #d4af37;border-radius:0 0 22px 22px;box-shadow:0 6px 18px rgba(0,0,0,0.2);position:sticky;top:0;z-index:1000}
+.head-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo{width:62px;height:62px;object-fit:contain;background:transparent!important;border-radius:50%;border:2px solid rgba(212,175,55,0.6);padding:3px;flex-shrink:0}
+.head-center{flex:1;text-align:center;padding:0 8px}
+.sunan{font-size:20px;font-weight:900;line-height:1.1;text-transform:uppercase}
+.taken{font-size:12px;margin-top:4px;color:#d4af37;opacity:0.95;font-style:italic}
+.head-buttons{margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.head-buttons a{background:rgba(255,255,255,0.1);border:1px solid rgba(212,175,55,0.35);color:white;padding:7px 14px;border-radius:999px;text-decoration:none;font-size:12.5px;font-weight:700;white-space:nowrap}
+.head-buttons a:hover{background:#d4af37;color:#0d2818}
+/* === 5. DATE & FOOTER === */
+.date-bar{background:#fff8e1;padding:8px 15px;display:flex;justify-content:space-between;font-size:12px;border-bottom:1px solid #f0e0a0}
+.footer-modern{background:#0d2818;color:#ccc;padding:30px 20px;margin-top:20px;text-align:center}
+.footer-modern h3{color:#d4af37;margin:0 0 5px 0;font-family:'Amiri',serif}
+.footer-modern p{font-size:13px;line-height:1.6;margin:5px 0}
