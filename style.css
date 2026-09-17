@@ -122,9 +122,9 @@ body{
   height:90px;
   object-fit:contain; /* Kada ya murde */
   background:transparent!important; /* Cire farin baya */
-  border-radius:50%; /* Da'irar */
+  border-radius:60%; /* Da'irar */
   border:2px solid rgba(212,175,55,0.8); /* Zinare a gefe */
-  padding:1px;
+  padding:0;
   flex-shrink:0 /* Kada ya matse */
 }
 .head-center{
