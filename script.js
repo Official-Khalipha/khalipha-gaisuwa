@@ -12,3 +12,32 @@ document.getElementById("hadisi-ha").innerText=hadisai[dayNum].ha;
 document.getElementById("hadisi-ref").innerText=hadisai[dayNum].ref;
 document.getElementById("ranar").innerText=today.toLocaleDateString('ha-NG',{weekday:'long'});
 try{document.getElementById('greg-date').innerText="📅 "+today.toLocaleDateString('ha-NG',{weekday:'long',day:'numeric',month:'long',year:'numeric'});document.getElementById('hijri-date').innerText="☪️ "+new Intl.DateTimeFormat('ha-NG-u-ca-islamic',{day:'numeric',month:'long',year:'numeric'}).format(today);}catch(e){document.getElementById('hijri-date').innerText="☪️ "+today.toLocaleDateString('ar-SA-u-ca-islamic',{day:'numeric',month:'long',year:'numeric'});}
+
+// === GYARAN KWANAN WATA - BOKO DA HIJRI ===
+function updateDates(){
+  const now = new Date();
+  
+  // 1. Boko - Turanci
+  const boko = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  
+  // 2. Hijri - Musulunci (Amfani da Intl)
+  const hijri = new Intl.DateTimeFormat('en-TN-u-ca-islamic', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  }).format(now);
+
+  // Saka su a page
+  const bokoEl = document.getElementById('boko-date');
+  const hijriEl = document.getElementById('hijri-date');
+  
+  if(bokoEl) bokoEl.textContent = boko;
+  if(hijriEl) hijriEl.textContent = hijri + ' AH';
+
+  // Idan kana da id daya kacal mai suna 'date-bar' to:
+  const dateBar = document.querySelector('.date-bar');
+  if(dateBar){
+     dateBar.innerHTML = `<span>📅 ${boko}</span><span style="color:#1a5c36;font-weight:bold">🕌 ${hijri} AH</span>`;
+  }
+}
+updateDates();
