@@ -118,8 +118,8 @@ body{
   margin:0 auto
 }
 .logo{
-  width:68px; /* Girman logo a waya */
-  height:68px;
+  width:100px; /* Girman logo a waya */
+  height:100px;
   object-fit:contain; /* Kada ya murde */
   background:transparent!important; /* Cire farin baya */
   border-radius:50%; /* Da'irar */
@@ -206,7 +206,7 @@ body{
 
 /* 1. Karamar Waya < 360px */
 @media(max-width:360px){
-.logo{width:52px;height:52px} /* Karamar logo */
+.logo{width:100px;height:100px} /* Karamar logo */
 .sunan{font-size:12px}
 .header h1{font-size:20px}
 .prayer-grid{grid-template-columns:1fr 1fr} /* Sallah 2 a jere */
@@ -220,7 +220,7 @@ body{
 
 /* 3. Tablet 481px - 768px */
 @media(min-width:481px) and (max-width:768px){
-.logo{width:80px;height:80px}
+.logo{width:150px;height:150px}
 .sunan{font-size:20px}
 .taken{font-size:13px}
 .header h1{font-size:30px}
@@ -230,7 +230,7 @@ body{
 
 /* 4. Laptop 769px - 1024px */
 @media(min-width:769px) and (max-width:1024px){
-.logo{width:90px;height:90px}
+.logo{width:200px;height:200px}
 .sunan{font-size:24px}
 .taken{font-size:14px}
 .head{padding:16px}
