@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aikin Hajji da Umara a Aikace</title>
+<style>
+  :root{--green:#0d2e1a;--gold:#c9a227;--bg:#fdfcf5;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Segoe UI', Tahoma, sans-serif; background:var(--bg); color:#222; line-height:1.7;}
+  
+  .top-header{background:var(--green); color:#fff; padding:20px 15px 15px; text-align:center; border-radius:0 0 25px 25px; position:absolut; top:0; z-index:100;}
+  .header-center{display:flex; flex-direction:column; align-items:center; justify-content:center; max-width:1100px; margin:0 auto;}
+  .logo-main{width:120px; height:120px; object-fit:contain; background:transparent; border-radius:50%; padding:5px; boder:3px solid var(--gold); box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+  .header-text{margin-top:12px; text-align:center;}
+  .header-text h1{font-size:26px; margin:0; color:#fff; line-height:1.2; letter-spacing:0.5px;}
+  .header-text h2{font-size:14px; font-weight:400; color:#f5d76e; margin-top:4px;}
+  @media(max-width:768px){
+    .logo-main{width:160px; height:160px;}
+    .header-text h1{font-size:20px;}
+    .header-text h2{font-size:12px;}
+  }
+
+  /* NAV - 4 TABS */
+  .nav-tabs{display:flex; background:var(--gold); border-bottom:2px solid #e8e0c0; position:sticky; top:0; z-index:99; overflow-x:auto; max-width:1100px; margin:0 auto; width:100%;}
+  .nav-tabs a{flex:1; min-width:80px; padding:14px 10px; text-align:center; text-decoration:none; background:#fff; border-radius:8px; margin:4px; font-size:12px; font-weight:bold; color:#222; cursor:pointer; border-bottom:3px solid transparent; transition:0.3s; white-space:nowrap; display:block;}
+  .nav-tabs a.active{background:#eef6ef; border-bottom-color:var(--green); color:var(--green);}
+  .nav-tabs a:hover{background:#f7f7f0;}
+
+  .content{padding:15px; max-width:800px; margin:0 auto;}
+  .card{background:#fff; border:1px solid #e8e0c0; border-radius:12px; padding:15px; margin:12px 0; box-shadow:0 2px 6px rgba(0,0,0,0.04);}
+  .card h3{color:var(--green); font-size:17px; margin-bottom:8px; border-left:4px solid var(--gold); padding-left:10px;}
+  .ayah-box{background:#fdf6e3; border:1px solid #e7d9a3; border-right:4px solid var(--gold); padding:12px; border-radius:8px; margin:10px 0; text-align:center;}
+  .dark-box{background:var(--green); color:#fff; padding:15px; border-radius:10px; margin:15px 0;}
+  .note-box{background:#eef6ef; border-left:4px solid var(--green); padding:10px; border-radius:6px; margin:10px 0; font-size:13px;}
+</style>
+</head>
+<body>
+
+<header class="top-header">
+  <div class="header-center">
+    <!-- SA HOTON KA ANAN - KA MAYE logo-hajj.png DA SUNAN HOTONKA -->
+    <img src="logo 1.png" class="logo-main" alt="Hajj Logo">
+    <div class="header-text">
+      <h1>AIKIN HAJJI DA UMARA A AIKACE</h1>
+      <h2>Jagorar Mahajjata da Mu'utamirai - Mataki zuwa Mataki</h2>
+    </div>
+  </div>
+</header>
+
+<!-- NAV - 4 GUDANA -->
+<nav class="nav-tabs">
+  <a href="index.html" class="active">GIDA</a>
+  <a href="hajji.html">1. HAJJI</a>
+  <a href="umara.html">2. UMARA</a>
+  <a href="masaloli-hajji.html">3. MAS'ALOLI</a>
+</nav>
+
+<div class="content">
+  <div class="card">
+    <h3>Gabatarwa: Aikin Hajji</h3>
+    <p>Hajji rukuni ne na biyar a Musulunci. Wannan shafin zai koya maka yadda ake gudanar da Hajji daga Ihrami har zuwa Tawaful Wada'i da hotuna da bayani a aikace.</p>
+  </div>
+  <div class="note-box">Domin karatu a kan Aikin Hajji mataki-mataki danna <strong>1. HAJJI</strong> dake sama ↑</div>
+
+  <div class="card">
+    <h3>Gabatarwa: Aikin Umara</h3>
+    <p>Umara ziyara ce zuwa Ka'aba wacce ta kunshi Ihrami, Tawafi, Sa'i da Aske. Ana iya yinta a kowane lokaci na shekara.</p>
+    <div class="ayah-box">
+      <p style="margin:0;">وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ</p>
+      <p style="margin:6px 0 0; font-size:13px;">Ku cika Hajji da Umara domin Allah.<br><small>Al-Baqarah: 196</small></p>
+    </div>
+  </div>
+  <div class="note-box">Domin karatu a kan Aikin Umara danna <strong>2. UMARA</strong> dake sama ↑</div>
+  
+  <div class="card">
+    <h3>Mas'aloli da Amsoshi</h3>
+    <p>Anan za ka samu amsoshin tambayoyin da suka fi yawa game da Hajji da Umara - kamar miqat, fidya, jifan shaidan, da hada Hajji da Umara.</p>
+  </div>
+  <div class="note-box">Domin karatu a kan Mas'aloli danna <strong>3. MAS'ALOLI</strong> dake sama ↑</div>
+</div>
+
+<div class="top-header" style="border-radius:25px 25px 0 0; margin-top:30px;">
+  <a href="index.html" style="display:inline-block; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.25); color:#fff; padding:8px 20px; border-radius:30px; text-decoration:none; font-size:13px;">← Koma Shafin Gida</a>
+</div>
+
+</body>
+</html>
