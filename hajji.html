@@ -27,21 +27,69 @@
   .bottom-nav{text-align:center; padding:25px 15px; border-top:2px solid #e8e0c0; margin-top:25px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;}
   .btn-home{background:var(--green); color:#fff; padding:10px 22px; border-radius:25px; text-decoration:none; font-size:14px; font-weight:bold;}
   .btn-top{background:#fff; color:var(--green); border:1.5px solid var(--green); padding:10px 22px; border-radius:25px; text-decoration:none; font-size:14px; font-weight:bold;}
+  /* GRID NA HOTUNA - RESPONSIVE */
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 15px 0;
+}
+.images img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #e8e0c0;
+  cursor: zoom-in;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+.images img:hover { transform: scale(1.03); }
+@media(max-width:600px){ .images{grid-template-columns:1fr} .images img{height:200px} }
+
+/* LIGHTBOX */
+#lightbox {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+#lightbox img {
+  max-width: 95%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+#lightbox.active { display: flex; }
 </style>
 </head>
 <body id="top">
 
 <header class="top-header">
   <div class="header-text">
-    <h1>YADDA AKE AIKIN HAJJI — TSARI DAGA FARKO HAR ƘARSHE</h1>
+    <h1>YADDA AKE AIKIN HAJJI — DAGA FARKO HAR ƘARSHE</h1>
     <p>Darasi dalla-dalla da hujjoji</p>
-    <a href="gidahajji.html" class="btn-header">← Koma Shafin Gida</a>
+    <a href="gidahajji.html" class="btn-header">← Koma Shafin Baya</a>
   </div>
 </header>
 
 <div class="content">
 
   <div class="card">
+    <h3>Niyya:</h3>
+    <p>Lallai mai aikin Hajji ko Umarah ya kysatata niyyarsa, yayi guzurin tsoran Allah a zuciyarsa yasan cewa ibadah ya tafi ba yawon bude ido ba</p>
+    Allah yana cewa:
+    <div class="ayah-box">
+    ﴿وَتَزَوَّدُوا فَإِنَّ خَيْرَ الزَّادِ التَّقْوَىٰ ۚ وَاتَّقُونِ يَا أُولِي الْأَلْبَابِ﴾
+[البقرة: 197]<br>
+    Ma’ana:
+    “Ku tanadi guzuri, domin mafi alherin guzuri shi ne taqawa. Kuma ku ji tsorona, ya ma’abota hankali.”</div>
+     Taƙaice: Allah yana koya mana cewa matafiyi yana bukatar guzurin tafiya, amma mafi muhimmancin guzurin rayuwar duniya da Lahira shi ne taqawa—bin umarnin Allah da nisantar abin da Ya hana.
     <div class="ayah-box">
       <p>Allah Ta'ala yace: </p>
       ﴿وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ﴾<br>
@@ -54,6 +102,9 @@
     <p>Mai Hajji zai shirya, ya yi wanka idan ya so, ya shirya tufafin ihrami, sannan ya tafi zuwa miqat.</p>
     <p>Annabi ﷺ ya kayyade wuraren miqat ga waɗanda suke zuwa Hajji ko Umra.</p>
     <div class="note-box">Ga wanda yake tafiya daga Najeriya ta jirgi, abin lura shi ne: ba sai jirgin ya sauka a wani miqat ba; idan jirgin zai ketare miqat, dole a shiga ihrami kafin a ketare shi.</div>
+    <div class="images">
+      <img src="zulhulaifa.jpg">
+    </div>
   </div>
 
   <div class="card">
@@ -63,6 +114,9 @@
       لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ
     </div>
     <p>Daga nan ya ci gaba da talbiya har zuwa Makkah.</p>
+    <div class="images">
+      <img src="makka.jpg">
+    </div>
   </div>
 
   <div class="card">
@@ -77,6 +131,9 @@
       <li>Sai ya tafi Safa.</li>
     </ul>
     <div class="note-box">Annabi ﷺ ya yi Tawaf, kuma Jabir ya bayyana cewa a tawafin zuwansa ya yi ramal a zagaye uku na farko sannan ya yi tafiya a huɗu na ƙarshe.</div>
+    <div class="images">
+      <img src="ɗawafi.jpg">
+    </div>
   </div>
 
   <div class="card">
@@ -93,17 +150,29 @@
       <tr><td>Safa → Marwa</td><td></td><td>7</td></tr>
     </table>
     <p>Saboda haka za a ƙare ne a Marwa.</p>
+    <div class="images">
+      <img src="safa-da-marwa.jpg">
+    </div>
   </div>
 
   <div class="card">
     <h3>Mataki na 5 — Aski ko rage gashi</h3>
-    <p>Bayan Sa'i na Umra, namiji: zai iya aski gaba ɗaya, ko ya rage gashi. Sai ya fita daga ihrami.</p>
+    <p>Bayan Sa'ayi na Umrah, namiji: zai iya aski gaba ɗaya, ko ya rage gashi. Sai ya fita daga ihrami.</p>
     <p>A nan ne Tamattu'i ya bambanta da Qirān da Ifrād.</p>
     <ul>
       <li>Mai Tamattu'i: ya fita daga ihrami bayan Umra.</li>
       <li>Mai Qirān/Ifrād: ba ya fita daga ihramin Hajji a wannan lokacin.</li>
     </ul>
-    <div class="ayah-box">Qur'ani ya ambaci aski da rage gashi a matsayin wani ɓangare na kammala ibadar.</div>
+    <p>Qur'ani ya ambaci aski da rage gashi a matsayin wani ɓangare na kammala ibadar.</p>
+    <div class="ayah-box"> ﴿لَقَدْ صَدَقَ اللَّهُ رَسُولَهُ الرُّؤْيَا بِالْحَقِّ ۖ لَتَدْخُلُنَّ الْمَسْجِدَ الْحَرَامَ إِنْ شَاءَ اللَّهُ آمِنِينَ مُحَلِّقِينَ رُءُوسَكُمْ وَمُقَصِّرِينَ لَا تَخَافُونَ﴾
+[الفتح: 27]
+      <b>Ma’ana:</b>
+     “Haƙiƙa Allah Ya tabbatar wa ManzonSa mafarkin da ya gani da gaskiya: lalle za ku shiga Masjid al-Haram, in Allah Ya so, kuna cikin aminci, kuna aske kawunanku, ko kuna rage gashinku, ba tare da tsoro ba.”<br>
+    </div>
+    <b>masu aske kai = مُحَلِّقِينَ<br> masu rage gashi = مُقَصِّرِينَ</b>
+    <div class="images">
+      <img src="aski.jpg">
+    </div>
   </div>
 
   <div class="card">
@@ -117,37 +186,62 @@
     <h3>Mataki na 7 — Ranar 9: Arafah</h3>
     <p>Bayan sallar Asuba, sai a tafi Arafah. Wannan ita ce rana mafi muhimmanci a Hajji.</p>
     <p>A Arafah: a yi sallar Azahar da La'asar a lokacin Azahar bisa Sunnah ta jam'i da kasaru ga mahajjata, a yi addu'a, zikiri, istighfari, karatun Qur'ani, da sauran ibadu.</p>
-    <div class="ayah-box" style="direction:rtl;">«وَعَرَفَةُ كُلُّهَا مَوْقِفٌ»<br>“Dukkan Arafah wurin tsayuwa ne.” — Sahih Muslim 1218c</div>
+    <div class="note-box" style="direction:rtl;">«وَعَرَفَةُ كُلُّهَا مَوْقِفٌ»<br>“Dukkan Arafah wurin tsayuwa ne.” — Sahih Muslim 1218c</div>
     <div class="dark-box">Tsayuwar Arafah ita ce ginshiƙin Hajji.</div>
+    <div class="images">
+      <img src="arfa.jpg">
+    </div>
+    <p>Lallai mahajjata su yawaita Addu'a da zikir a filin Arfa</p>
+    <div class="images">
+      <img src="arfadu'a.jpg">
+    </div>
   </div>
 
   <div class="card">
     <h3>Mataki na 8 — Bayan faɗuwar rana: Muzdalifah</h3>
-    <p>Bayan rana ta faɗi, sai a tafi Muzdalifah. A can: a yi Magariba da Isha'i tare, a kwana, a yi zikiri da addu'a, sannan a yi Sallar Asuba.</p>
+    <p>Bayan rana ta faɗi, sai a tafi Muzdalifah. A can: a yi Magariba da Isha'i tare, sannan a kwana a wajan, a yi zikiri da addu'a, sannan a yi Sallar Asuba.</p>
     <div class="note-box">Muzdalifah gaba ɗayanta wurin tsayuwa ne, kamar yadda Annabi ﷺ ya bayyana.</div>
+    <div class="images">
+      <img src="musdalifa.jpg">
+    </div>
   </div>
 
   <div class="card">
     <h3>Mataki na 9 — Ranar 10: Mina (Yawm an-Nahr)</h3>
     <p>A nan akwai manyan ayyuka guda huɗu:</p>
-    <h4>1. Jifar Jamrat al-'Aqabah</h4>
+    <h4>1. Jifar Jamrat al-'Aqabah (Jifan Sheɗan)</h4>
     <p>A jefa duwatsu bakwai, ɗaya bayan ɗaya, tare da yin takbiri. Ibn Umar ya bayyana yadda Annabi ﷺ yake yin jifa da duwatsu bakwai.</p>
-    <h4>2. Hadaya</h4>
+     <div class="images">
+      <img src="jamratul-aqaba.jpg">
+    </div>
+    <h4>2. Hadaya (Yanka)</h4>
     <div class="ayah-box">﴿فَمَا اسْتَيْسَرَ مِنَ الْهَدْيِ﴾<br>Idan bai sami abin hadayar ba, ayar ta bayyana madadin azumin kwanaki uku lokacin Hajji da bakwai bayan dawowa, guda goma.</div>
+    <div class="images">
+      <img src="yanka.jpg">
+    </div>
     <h4>3. Aske ko rage gashi</h4>
     <p>Sai ya aske ko ya rage gashi.</p>
-    <h4>4. Tawaf al-Ifadah</h4>
+    <div class="images">
+      <img src="aski.jpg">
+    </div>
+    <h4>4. Tawaf al-Ifadah (Ɗawafi Ziyara)</h4>
     <p>Sai ya tafi Makkah ya yi Tawaf al-Ifadah.</p>
+    <div class="images">
+      <img src="ɗawafi.jpg">
+    </div>
   </div>
 
   <div class="card">
-    <h3>Mataki na 10 — Sa'i bayan Tawaf al-Ifadah</h3>
-    <p>Ga mai Tamattu'i, akwai Sa'i na biyu bayan Tawaf al-Ifadah, domin wannan shi ne Sa'in Hajji. Saboda haka mai Tamattu'i yana da:</p>
+    <h3>Mataki na 10 — Sa'ayi bayan Tawaf al-Ifadah</h3>
+    <p>Ga mai Tamattu'i, akwai Sa'ayi na biyu bayan Tawaf al-Ifadah, domin wannan shi ne Sa'ayin Hajji. Saboda haka mai Tamattu'i yana da:</p>
     <ul>
-      <li>Sa'in Umra = na farko</li>
-      <li>Sa'in Hajji = na biyu</li>
+      <li>Sa'ayin Umra = na farko</li>
+      <li>Sa'ayin Hajji = na biyu</li>
     </ul>
     <div class="danger-box">Wannan muhimmin bambanci ne.</div>
+    <div class="images">
+      <img src="safa-da-marwa.jpg">
+    </div>
   </div>
 
   <div class="card">
@@ -159,33 +253,53 @@
       <li>Jamrat al-Kubra</li>
     </ul>
     <p>Kowacce ana jifanta da duwatsu bakwai. Bayan ƙaramar Jamrah da ta tsakiya, Sunnah ce a tsaya a yi addu'a; Ibn Umar ya bayyana haka daga aikin Annabi ﷺ.</p>
+    <div class="images">
+      <img src="jamra-uku.jpg">
+    </div>
   </div>
 
   <div class="card">
     <h3>Mataki na 12 — Ranar 12 ko 13</h3>
-    <p>Idan mahajjaci ya gama jifan ranar 12 kuma ya bar Mina kafin rana ta faɗi, yana iya yin Nafar na farko. Idan ya ci gaba da zama, sai ya yi jifar ranar 13 sannan ya tafi.</p>
+    <p>Idan mahajjaci ya gama jifan ranar 12 kuma ya bar Mina kafin rana ta faɗi, yana iya yin <b>Nafar</b> na farko. Idan ya ci gaba da zama, sai ya yi jifar ranar 13 sannan ya tafi.</p>
+    <h3>An-Nafar (النَّفْر) - Fita daga Mina</h3>
+  
+    <p><strong>Nafar</strong> a Hajj yana nufin fita daga Mina zuwa Makkah bayan an kammala ayyukan jifa.</p>
+  
+  <ul>
+    <li><strong>Nafar na Farko (النفر الأول):</strong> fita daga Mina a ranar 12 ga Zul-Hijjah, kafin faɗuwar rana.</li>
+    <li><strong>Nafar na Biyu:</strong> zama har ranar 13, a yi jifa, sannan a fita daga Mina.</li>
+  </ul>
+ 
+   <div class="ayah-box">
+     <p>﴿فَمَنْ تَعَجَّلَ فِي يَوْمَيْنِ فَلَا إِثْمَ عَلَيْهِ وَمَنْ تَأَخَّرَ فَلَا إِثْمَ عَلَيْهِ﴾</p>
+     <small>Al-Baqarah 2:203</small>
+     <p><strong>Ma'ana:</strong> Wanda ya yi gaggawa ya fita cikin kwanaki biyu, babu laifi a kansa; wanda ya jinkirta, babu laifi a kansa.</p>
+   </div>
   </div>
 
   <div class="card">
-    <h3>Mataki na 13 — Tawaf al-Wada'</h3>
+    <h3>Mataki na 13 — Tawaf al-Wada' (Ɗawafin Bankwana)</h3>
     <p>Kafin ya bar Makkah, sai ya yi Tawaf al-Wada'.</p>
     <div class="note-box">Annabi ﷺ ya umurci mahajjata cewa ƙarshen zamansu a Makkah ya kasance da Tawaf, sai an sassauta wa mace mai haila. — Sahih al-Bukhari 1755.</div>
     <p>Bayan Tawaf al-Wada', idan zai bar Makkah, Hajjinsa ya kammala.</p>
+    <div class="images">
+      <img src="ɗawafi.jpg">
+    </div>
   </div>
 
   <div class="card">
     <h3>Tsarin duka a layi ɗaya</h3>
-    <div style="background:#f8f6eb; border:1px solid #e8e0c0; padding:12px; border-radius:8px; font-family:monospace; font-size:13px; line-height:1.6; white-space:pre-wrap;">Miqat → Ihram → Umra → Tawaf → Sa'i → Aski/rage gashi → fita daga ihrami
+    <div style="background:#f8f6eb; border:1px solid #e8e0c0; padding:12px; border-radius:8px; font-family:monospace; font-size:13px; line-height:1.6; white-space:pre-wrap;">Miqat → Ihram → Umra → Tawaf → Sa'ayi → Aski/rage gashi → fita daga ihrami
 8 Dhul-Hijjah → sake ihrami → Mina
 9 → Arafah → Muzdalifah
-10 → Jamarat al-'Aqabah → Hadaya → Aski/rage gashi → Tawaf al-Ifadah → Sa'i
+10 → Jamarat al-'Aqabah → Hadaya → Aski/rage gashi → Tawaf al-Ifadah → Sa'ayi
 11 → Jamarat uku
 12 → Jamarat uku → fita Mina
 ko:
 13 → Jamarat uku → fita Mina
 Kafin tafiya → Tawaf al-Wada' → barin Makkah.</div>
     <div class="dark-box" style="text-align:center;">
-      Wannan shi ne cikakken tsarin Hajjin Tamattu’i daga farko har ƙarshe. Dalilin da ya fi tattara bayanin aikin Annabi ﷺ shi ne dogon hadisin Jabir رضي الله عنه a Sahih Muslim 1218a, tare da sauran hadisai na miqat, jifa da Tawaf al-Wada'.<br><br>
+      Wannan shi ne cikakken tsarin Hajjin Tamattu’i daga farko har ƙarshe. Dalilin da ya fi tattara bayanin aikin Annabi ﷺ shi ne dogon hadisin Jabir رضي الله عنه a Sahih Muslim 1218a, tare da sauran hadisai na miqat, jifa da Tawaf al-Wada'.<br>
       والله أعلم
     </div>
   </div>
@@ -194,7 +308,23 @@ Kafin tafiya → Tawaf al-Wada' → barin Makkah.</div>
     <a href="gidahajji.html" class="btn-home">← Koma Shafin Baya</a>
     <a href="#top" class="btn-top">↑ Koma Saman Shafin</a>
   </div>
+<div id="lightbox"><img src="" alt=""></div>
 
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = lightbox.querySelector('img');
+  
+  document.querySelectorAll('.images img').forEach(img => {
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lightbox.classList.add('active');
+    });
+  });
+  
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+</script>
 </div>
 </body>
-</html>
+</html>        
