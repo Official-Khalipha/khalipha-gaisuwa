@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YADDA AKE UMRAH</title>
+<style>
+  :root{--green:#0d2e1a;--gold:#c9a227;--bg:#fdfcf5;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Segoe UI', Tahoma, sans-serif; background:var(--bg); color:#222; line-height:1.8;}
+  .top-header{background:var(--green); color:#fff; padding:20px 15px; text-align:center; border-radius: 25px; z-index:100;}
+  .header-text h1{font-size:26px; margin:0 0 4px; color:#fff; font-weight:800; text-transform:uppercase; letter-spacing:0.5px;}
+  .header-text p{font-size:14px; color:#c9d9ce; margin:0 0 15px;}
+  .btn-header{display:inline-block; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.35); color:#fff; padding:8px 22px; border-radius:25px; text-decoration:none; font-size:14px; font-weight:bold;}
+  .content{padding:15px; max-width:800px; margin:0 auto;}
+  .card{background:#fff; border:1px solid #e8e0c0; border-radius:12px; padding:16px; margin:14px 0; box-shadow:0 2px 6px rgba(0,0,0,0.04);}
+  .card h3{color:var(--green); font-size:18px; margin-bottom:10px; border-left:4px solid var(--gold); padding-left:10px;}
+  .card h4{color:#333; font-size:15px; margin:12px 0 6px;}
+  .dark-box{background:var(--green); color:#fff; padding:15px; border-radius:10px; margin:15px 0;}
+  .note-box{background:#eef6ef; border-left:4px solid var(--green); padding:10px 12px; border-radius:6px; margin:12px 0; font-size:13px;}
+  .danger-box{background:#fef2f2; border-left:4px solid #c53030; padding:10px 12px; border-radius:6px; margin:12px 0; font-size:13px;}
+  .ayah-box{background:#fdf6e3; border:1px solid #e7d9a3; border-right:4px solid var(--gold); padding:12px; border-radius:8px; margin:12px 0; text-align:center;}
+  table{width:100%; border-collapse:collapse; margin:12px 0; font-size:14px;}
+  th,td{border:1px solid #e8e0c0; padding:8px; text-align:left;}
+  th{background:#eef6ef; color:var(--green);}
+  ul{margin:8px 0 8px 20px;} li{margin:4px 0;}
+  .bottom-nav{text-align:center; padding:25px 15px; border-top:2px solid #e8e0c0; margin-top:25px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;}
+  .btn-home{background:var(--green); color:#fff; padding:10px 22px; border-radius:25px; text-decoration:none; font-size:14px; font-weight:bold;}
+  .btn-top{background:#fff; color:var(--green); border:1.5px solid var(--green); padding:10px 22px; border-radius:25px; text-decoration:none; font-size:14px; font-weight:bold;}
+  /* GRID NA HOTUNA - RESPONSIVE */
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 15px 0;
+}
+.images img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #e8e0c0;
+  cursor: zoom-in;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+.images img:hover { transform: scale(1.03); }
+@media(max-width:600px){ .images{grid-template-columns:1fr} .images img{height:200px} }
+
+/* LIGHTBOX */
+#lightbox {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+#lightbox img {
+  max-width: 95%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+#lightbox.active { display: flex; }
+</style>
+</head>
+<body id="top">
+
+<header class="top-header">
+  <div class="header-text">
+    <h1>DARASI: YADDA AKE UMRAH</h1>
+    <p>Darasi dalla-dalla da hujjoji</p>
+    <a href="gidahajji.html" class="btn-header">← Koma Shafin Baya</a>
+  </div>
+</header>
+
+<div class="content">
+
+  <div class="card">
+    <h3>Menene Umrah?</h3>
+    <p>Umrah ita ce:</p>
+    <ul>
+      <li>Niyya</li>
+      <li>Ihrami</li>
+      <li>Tawafi a Ka'aba</li>
+      <li>Sa'ayi tsakanin Safa da Marwa</li>
+      <li>Aske gashi ko rage shi.</li>
+    </ul>
+    <div class="ayah-box">
+      وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ<br>
+      “Ku cika Hajji da Umrah domin Allah.” — Al-Baqarah 2:196.
+    </div>
+  </div>
+
+  <div class="card" style="background:var(--green); color:#fff; text-align:center; padding:18px;">
+    <h2 style="font-size:20px; margin:0; color:#fff; border:none; padding:0;">B. YADDA AKE UMRAH</h2>
+  </div>
+
+  <div class="card">
+    <h3>1. Kafin a shiga Ihrami</h3>
+    <p>Idan mutum zai wuce Miqat yana da niyyar Umrah, sai ya shirya. Ana so ya:</p>
+    <ul>
+      <li>yi wanka,</li>
+      <li>tsaftace jikinsa,</li>
+      <li>namiji ya sanya tufafin Ihrami,</li>
+      <li>mace ta sanya tufafin da suka dace da suturarta.</li>
+    </ul>
+    <p>Namiji: zanin ƙasa da mayafi biyu marasa dinki irin na jiki. Bayan haka sai ya shiga Ihrami.</p>
+    <div class="note-box"><b>Muhimmin abu:</b> Niyya tana cikin zuciya. Baya halatta mutum ya yi wata doguwar magana da baki domin yin “niyya”.</div>
+  </div>
+
+  <div class="card">
+    <h3>2. Miqat</h3>
+    <p>Annabi ﷺ ya sanya wuraren da mutanen da suke zuwa Makkah za su shiga Ihrami idan suna da niyyar Hajji ko Umrah. Daga cikin su:</p>
+    <table>
+      <tr><th>Wuri</th><th>Mutanen da ya dace da su</th></tr>
+      <tr><td>Dhul-Hulayfah</td><td>mutanen Madina</td></tr>
+      <tr><td>Al-Juhfah</td><td>mutanen Sham</td></tr>
+      <tr><td>Qarn al-Manazil</td><td>mutanen Najd</td></tr>
+      <tr><td>Yalamlam</td><td>mutanen Yemen</td></tr>
+    </table>
+    <div class="note-box">Hadisin Ibn Abbas رضي الله عنهما yana cikin Sahih al-Bukhari 1526. Kuma hukuncin ya shafi wanda ya zo ta waɗannan wuraren da niyyarsa Hajji ko Umrah, ba mutanen yankin kawai ba.</div>
+    <p>• Ga hoton <b>Zulhulaifa:</b> ana kiran yanzu da <strong>(Abyr Ali)</strong> </p>
+    <div class="images">
+      <img src="zulhulaifa.jpg">
+    </div>
+    <p>Wannan shine miqati na Mahajjata da suka zo ta hanyar <b>Madina.</b></p>
+    <p>• Ga hoton <b>juhfah</b> wanda yanzu ake kira da Rabigh:</p>
+    <div class="images">
+      <img src="juhfah.jpg">
+    </div>
+    <p>Wannan shine miqati na Mahajjata da suka zo ta hanyar <b>Sham</b>, <b>Misra</b> da <strong>Arewacin Afrika</strong>, Mahajjata za su sanya ihrami a nan.</p>
+    <p>• Ga hoton <b>Qarnil Manazil (As-Asyl Al-Kabir):</b></p>
+    <div class="images">
+      <img src="qarnil-manazil.jpg">
+    </div>
+    <p>Wannan shine miqati na Mahajjata da suka zo daga <b>Najd</b> da <b>Ɗa'if</b> da <b>Gabas.</b></p>
+    <p>• Ga hoton <b>Yalamlam:</b></p>
+    <div class="images">
+      <img src="yalamlam.jpg">
+    </div>
+    <p>Wannan shine miqati na Mahajjata da suka zo daga <b>Yemen,</b> da <b>Indiya</b> da waƴanda suka zo ta <b>Teku</b> da <strong>Kudanc Duniya</strong> </p>
+  </div>
+
+  <div class="card">
+    <h3>3. Yin Talbiya</h3>
+    <p>Bayan Ihrami sai mutum ya fara:</p>
+    <div class="ayah-box" style="direction:rtl; font-size:20px;">
+      لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ،<br>
+      لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ،<br>
+      إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ،<br>
+      لَا شَرِيكَ لَكَ.
+    </div>
+    <p><b>Ma'ana:</b> “Ga amsarka ya Allah, ga amsarka. Babu abokin tarayya gare Ka. Ga amsarka. Lalle yabo da ni'ima da mulki naka ne. Babu abokin tarayya gare Ka.”</p>
+    <div class="note-box">Wannan ita ce Talbiyyar Annabi ﷺ, kamar yadda Ibn Umar رضي الله عنهما ya rawaito a Sahih al-Bukhari 1549. Namiji yana ɗaga murya da Talbiya; mace kuma ta yi ta a hankali gwargwadon yadda ba za ta jawo fitina ba.</div>
+  </div>
+
+  <div class="card">
+    <h3>4. Shiga Makkah</h3>
+    <p>Idan ya isa Makkah, sai ya shiga Masjid al-Haram. Idan ya isa Ka'aba, sai ya fara Tawafi.</p>
+    <div class="images">
+      <img src="makka2.jpg">
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>5. Tawafin Umrah</h3>
+    <p>Tawafi = zagayawa Ka'aba sau bakwai.</p>
+    <h4>Daga ina ake farawa?</h4>
+    <p>Daga wajen Hajar Aswad. Idan mutum ya iya isa gare shi ba tare da cutar da mutane ba, zai sumbace shi. Idan ba zai iya ba, sai ya nuna masa ya ce:</p>
+    <div class="ayah-box" style="direction:rtl;">الله أكبر</div>
+    <p>Kada mutum ya tura mutane ko ya cutar da su domin ya kai ga Hajar Aswad.</p>
+    <h4>Yadda ake zagayawa</h4>
+    <ul>
+      <li>Ka'aba tana kasancewa a gefen hagu.</li>
+      <li>Sai ya yi: zagaye na 1, 2, 3, 4, 5, 6, 7.</li>
+    </ul>
+    <div class="note-box">Annabi ﷺ ya yi tawafi, kuma Jabir رضي الله عنه ya bayyana cewa Annabi ﷺ ya fara da Hajar Aswad, sannan ya yi tawafi. A farkon zagayen tawafin zuwan Makkah ya yi ramal a zagaye uku, sannan ya yi tafiya a hudu. Ramal — tafiya da sauri kaɗan tare da gajeren mataki — na musamman ne ga maza a irin wannan tawafin da aka rawaito; ba mace take yin sa ba.</div>
+    <div class="images">
+      <img src="makka.jpg">
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>6. Bayan Tawafi</h3>
+    <p>Bayan zagaye bakwai, sai a yi sallar raka'a biyu. Ana so a yi ta bayan Maqam Ibrahim idan hakan zai yiwu ba tare da cunkoso ko cutar da mutane ba. Idan ba zai yiwu ba, mutum zai iya yin ta a wani wuri na Masjid.</p>
+    <div class="ayah-box">
+      ﴿وَاتَّخِذُوا مِنْ مَقَامِ إِبْرَاهِيمَ مُصَلًّى﴾<br>
+      <span>“Ku riƙi Maqam Ibrahim ya zama wurin salla.” — Qur'ani 2:125</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>7. Sa'ayi tsakanin Safa da Marwa</h3>
+    <div class="ayah-box">إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ<br>“Safa da Marwa suna daga cikin alamomin Allah.” — Al-Baqarah 2:158.</div>
+    <p>Sai ya yi sa'ayi sau bakwai:</p>
+    <table>
+      <tr><th>Lamba</th><th>Daga → Zuwa</th></tr>
+      <tr><td>1</td><td>Safa → Marwa</td></tr>
+      <tr><td>2</td><td>Marwa → Safa</td></tr>
+      <tr><td>3</td><td>Safa → Marwa</td></tr>
+      <tr><td>4</td><td>Marwa → Safa</td></tr>
+      <tr><td>5</td><td>Safa → Marwa</td></tr>
+      <tr><td>6</td><td>Marwa → Safa</td></tr>
+      <tr><td>7</td><td>Safa → Marwa (ana ƙarewa a Marwa)</td></tr>
+    </table>
+     <div class="note-box"><b>Dalili:</b> Hadisin Jabir رضي الله عنه a Sahih Muslim 1218a, inda ya bayyana yadda Annabi ﷺ ya yi sa'i.</div>
+    <div class="images">
+      <img src="safa-da-marwa.jpg">
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>8. Aske ko rage gashi</h3>
+    <p>Bayan Sa'ayi sai a fita daga Ihrami ta hanyar:</p>
+    <ul>
+      <li><b>Namiji:</b> Halq: aske kai gaba ɗaya. Taqsir: rage gashi. Aske kai gaba ɗaya yana da falala mafi girma; Annabi ﷺ ya yi addu'a ga masu aske kai, sannan ya sake yi wa masu ragewa. Wannan ya zo cikin hadisai sahihai.</li>
+      <li><b>Mace:</b> Ba ta aske kanta. Sai ta rage kaɗan daga ƙarshen gashinta.</li>
+    </ul>
+    <div class="images">
+      <img src="aski.jpg">
+    </div>
+    <div class="dark-box" style="text-align:center;">Da haka Umrah ta ƙare.</div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="gidahajji.html" class="btn-home">← Koma Shafin Baya</a>
+    <a href="#top" class="btn-top">↑ Koma Saman Shafin</a>
+  </div>
+  <div id="lightbox"><img src="" alt=""></div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = lightbox.querySelector('img');
+  
+  document.querySelectorAll('.images img').forEach(img => {
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lightbox.classList.add('active');
+    });
+  });
+  
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+</script>
+</div>
+</body>
+</html>
