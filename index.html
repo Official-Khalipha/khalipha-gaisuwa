@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Kariya daga Clickjacking -->
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <!-- Kariya daga MIME Sniffing -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <!-- Kariya daga XSS - karamin kariya -->
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <!-- Wannan shi ne mafi muhimmanci - CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+  ... sauran code dinka
 <title>Haske Na Musulunci - Shafin Markazus Salafiyya</title>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
