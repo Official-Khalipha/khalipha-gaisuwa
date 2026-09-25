@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ha" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Littattafan Musulunci - Darul Qur'anus Salafiyya</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box; margin:0; padding:0; font-family:'Inter',sans-serif}
+body{background:#f3f6f1; color:#222; max-width:600px; margin:auto}
+.head{background:#0f5d2e; color:white; padding:12px; border-radius:0 0 20px 20px}
+.head-top{display:flex; align-items:center; justify-content:space-between}
+.logo{width:80px; height:80px; border-radius:50%; background:transparent; object-fit:contain}
+.head-center{text-align:center; flex:1}
+.sunan h1{font-size:16px; font-weight:800; line-height:1.1}
+.taken h2{font-size:12px; font-weight:400; color:#d4f5d4; font-style:italic}
+.head-buttons{display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:12px}
+.head-buttons a{background:rgba(255,255,255,0.15); color:white; padding:6px 12px; border-radius:20px; text-decoration:none; font-size:12px; font-weight:600}
+.header{text-align:center; padding:18px 15px 10px 15px}
+.header h2{font-size:18px; color:#0f5d2e}
+.header p{font-size:13px; color:#666; margin-top:4px}
+.card{background:white; border-radius:18px; padding:16px; margin:14px; box-shadow:0 4px 15px rgba(0,0,0,0.05)}
+.badge{background:#1a5c36; color:white; padding:5px 12px; border-radius:20px; font-size:11px; font-weight:700; display:inline-block; margin-bottom:8px}
+.search-box{width:100%; padding:13px 15px; border-radius:25px; border:1.5px solid #dde6db; outline:none}
+.search-box:focus{border-color:#1a5c36}
+.filter-tabs{display:flex; gap:8px; overflow-x:auto; padding:10px 0; scrollbar-width:none}
+.f-tab{padding:8px 18px; border-radius:20px; border:1.5px solid #cde3cb; background:white; cursor:pointer; font-size:13px; font-weight:600; white-space:nowrap; color:#1a5c36; flex-shrink:0}
+.f-tab.active{background:#1a5c36; color:white; border-color:#1a5c36}
+.book-card{display:flex; gap:12px; background:white; border-radius:15px; padding:14px; margin-bottom:12px; box-shadow:0 3px 10px rgba(0,0,0,0.05); border-left:5px solid #d4af37}
+.book-icon{width:55px; height:72px; background:#e8f5e9; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:30px; flex-shrink:0}
+.book-info{flex:1}
+.book-info h4{font-size:14px; color:#1a5c36; line-height:1.3; font-weight:700}
+.book-info small{color:#777; font-size:11px; display:block; margin:4px 0 8px 0}
+.book-btns{display:flex; gap:8px}
+.btn-read, .btn-down{flex:1; padding:9px; border-radius:10px; border:0; font-weight:700; font-size:12px; cursor:pointer; text-align:center; text-decoration:none}
+.btn-read{background:#1a5c36; color:white}
+.btn-down{background:#fff8e1; color:#8d6e00; border:1px solid #ffe082}
+.footer-modern{background:#0f2e1c; color:white; text-align:center; padding:20px; margin-top:20px; border-radius:20px 20px 0 0}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div class="head-top">
+    <img src="logo 1.png" class="logo" alt="Logo">
+    <div class="head-center">
+      <div class="sunan"><h1>DARUL QUR'ANUS SALAFIYYA</h1></div>
+      <div class="taken"><h2>Littattafan Musulunci</h2></div>
+    </div>
+    <img src="logo 1.png" class="logo" alt="Logo">
+  </div>
+  <div class="head-buttons">
+    <a href="index.html">🏠 Gida</a>
+    <a href="tsarki.html">✨ Tsarki</a>
+    <a href="sallah.html">🕌 Sallah</a>
+  </div>   
+</div>
+
+<div class="header">
+<h2>📚 LITTATTAFAN MUSULINCI</h2>
+<p>Karanta ko Sauke Littattafai na Addini - PDF</p>
+</div>
+
+<div class="card">
+<input type="text" id="searchBook" onkeyup="filterBooks()" class="search-box" placeholder="🔍 Nemo littafi... misali: Sallah, Azumi...">
+<div class="filter-tabs">
+  <button class="f-tab active" onclick="setCat('all',this)">Duka</button>
+  <button class="f-tab" onclick="setCat('aqida',this)">Tafseer</button>
+  <button class="f-tab" onclick="setCat('aqida',this)">Aqida</button>
+  <button class="f-tab" onclick="setCat('fiqhu',this)">Fiqhu</button>
+  <button class="f-tab" onclick="setCat('azkar',this)">Azkar</button>
+  <button class="f-tab" onclick="setCat('tajweed',this)">Tajweed</button>
+</div>
+
+<div id="book-list">
+  <div class="book-card" data-cat="fiqhu" data-name="sifatus salatin nabiyyi sallah">
+    <div class="book-icon">📘</div>
+    <div class="book-info">
+      <h4>Sifatus Salatin Nabiyyi ﷺ</h4>
+      <small>Marubuci: Sheikh Nasiruddeen Albani | Fiqhu</small>
+      <div class="book-btns">
+        <a href="books/sifatus-salah.pdf" target="_blank" class="btn-read">📖 Karanta</a>
+        <a href="books/sifatus-salah.pdf" download class="btn-down">⬇️ Sauke</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-card" data-cat="azkar" data-name="hisnul muslim azkar">
+    <div class="book-icon">📗</div>
+    <div class="book-info">
+      <h4>Hisnul Muslim</h4>
+      <small>Azkar na yau da kullum | Azkar</small>
+      <div class="book-btns">
+        <a href="books/hisnul-muslim.pdf" target="_blank" class="btn-read">📖 Karanta</a>
+        <a href="books/hisnul-muslim.pdf" download class="btn-down">⬇️ Sauke</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-card" data-cat="aqida" data-name="kitabut tauheed tauhidi">
+    <div class="book-icon">📙</div>
+    <div class="book-info">
+      <h4>Kitabut Tauheed</h4>
+      <small>Marubuci: Muhammad bin Abdulwahhab | Aqida</small>
+      <div class="book-btns">
+        <a href="books/kitabut-tauheed.pdf" target="_blank" class="btn-read">📖 Karanta</a>
+        <a href="books/kitabut-tauheed.pdf" download class="btn-down">⬇️ Sauke</a>
+      </div>
+    </div>
+  </div>
+  <div class="book-card" data-cat="fiqhu" data-name="riyadus salihin">
+    <div class="book-icon">📕</div>
+    <div class="book-info">
+      <h4>Riyadus Salihin</h4>
+      <small>Marubuci: Imam Nawawi | Fiqhu</small>
+      <div class="book-btns">
+        <a href="books/riyadus-salihin.pdf" target="_blank" class="btn-read">📖 Karanta</a>
+        <a href="books/riyadus-salihin.pdf" download class="btn-down">⬇️ Sauke</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+</div>
+</div>
+
+<div class="footer-modern">
+  <h3>Madrasatu Darul Qur'anus Salafiyya</h3>
+  <p style="font-size:12px; margin-top:8px">© 2026 Ilmi Haske ne</p>
+  <a href="index.html" style="color:#d4af37; text-decoration:none; display:inline-block; margin-top:12px; border:1px solid #d4af37; padding:8px 18px; border-radius:20px; font-size:13px;">⬅️ Koma Gida</a>
+</div>
+
+<script>
+let currentCat='all';
+function setCat(cat,el){
+  currentCat=cat;
+  document.querySelectorAll('.f-tab').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  filterBooks();
+}
+function filterBooks(){
+  let q=document.getElementById('searchBook').value.toLowerCase();
+  document.querySelectorAll('.book-card').forEach(card=>{
+    let name=card.getAttribute('data-name');
+    let cat=card.getAttribute('data-cat');
+    let matchSearch=name.includes(q);
+    let matchCat=(currentCat==='all' || cat===currentCat);
+    card.style.display=(matchSearch && matchCat) ? 'flex' : 'none';
+  });
+}
+</script>
+</body>
+</html
