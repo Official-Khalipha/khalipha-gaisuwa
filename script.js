@@ -12,6 +12,8 @@ function reset(){
   document.getElementById('count').innerText = 0;
 }
 
+
+
 const ayahs=[
 {ar:"وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا",ha:"Duk wanda yayi taqawa, Allah zai sanya masa mafita",ref:"Suratu At-Talaq: 2"},
 {ar:"إِنَّ مَعَ الْعُسْرِ يُسْرًا",ha:"Lallai tare da tsanani akwai sauki",ref:"Suratu Ash-Sharh: 6"},
