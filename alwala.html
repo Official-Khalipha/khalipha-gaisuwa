@@ -1,83 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Yadda Ake Sallah</title>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yadda Ake Alwala</title>
 <style>
-  body{font-family:sans-serif;padding:20px;background:#f6f7f0} .card{background:white;padding:20px;border-radius:12px;margin-bottom:15px} h2{color:#1a5c36} li::marker{font-size: 1.17em;font-weight: bold;}
-  .moving-text {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-}
+  :root{--green:#0d2e1a;--gold:#c9a227;--bg:#fdfcf5;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Segoe UI', Tahoma, sans-serif; background:var(--bg); color:#222; line-height:1.8;}
+  .top-header{background:var(--green); color:#fff; padding:20px 15px; text-align:center; border-radius:0 0 15px 15px; margin:0px; z-index:100;}
+  .header-text h1{font-size:24px; margin:0 0 4px; color:#fff; font-weight:800; text-transform:uppercase; letter-spacing:0.5px;}
+  .header-text p{font-size:14px; color:#c9d9ce; margin:0 0 15px;}
+  .btn-header{display:inline-block; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.35); color:#fff; padding:8px 22px; border-radius:25px; text-decoration:none; font-size:14px; font-weight:bold;}
+  
+  .moving-text{width:100%; overflow:hidden; white-space:nowrap; background:#fff; padding:10px 0; border-bottom:2px solid #e8e0c0; margin-bottom:10px;}
+  .moving-text p{margin:0; display:inline-block; font-size:16px; color:var(--green); font-weight:bold; animation:moveText 18s linear infinite;}
+  @keyframes moveText{from{transform:translateX(100%)} to{transform:translateX(-100%)}}
 
-.moving-text p {
-  margin: 0;
-  display: inline-block;
-  font-size: 20px;
-  color: hwb(120 16% 62%);
-  font-weight: bold;
-  animation: moveText 15s linear infinite;
-}
-
-@keyframes moveText {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
+  .content{padding:15px; max-width:800px; margin:0 auto;}
+  .card{background:#fff; border:1px solid #e8e0c0; border-radius:12px; padding:16px; margin:14px 0; box-shadow:0 2px 6px rgba(0,0,0,0.04);}
+  .card h3{color:var(--green); font-size:18px; margin-bottom:10px; border-left:4px solid var(--gold); padding-left:10px;}
+  .card p{font-size:15px; text-align:justify;}
+  .ayah-box{background:#fdf6e3; border:1px solid #e7d9a3; border-right:4px solid var(--gold); padding:12px; border-radius:8px; margin:12px 0; text-align:center;}
+  .dark-box{background:var(--green); color:#fff; padding:15px; border-radius:10px; margin:15px 0; text-align:center;}
+  .bottom-nav{text-align:center; padding:25px 15px; border-top:2px solid #e8e0c0; margin-top:25px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;}
+  .btn-home{background:var(--green); color:#fff; padding:10px 22px; border-radius:25px; text-decoration:none; font-size:14px; font-weight:bold;}
+  .btn-top{background:#fff; color:var(--green); border:1.5px solid var(--green); padding:10px 22px; border-radius:25px; text-decoration:none; font-size:14px; font-weight:bold;}
 </style>
 </head>
-<body>
-<h1>Yadda Ake Alwala - Haske Na Musulunci</h1>
+<body id="top">
+
+<header class="top-header">
+  <div class="header-text">
+    <h1>YADDA AKE ALWALA</h1>
+    <p>Haske Na Musulunci</p>
+    <a href="index.html" class="btn-header">← Koma Shafin Gida</a>
+  </div>
+</header>
+
 <div class="moving-text">
   <p>Maraba da zuwa Markazus Salafiyya — Don koyan Ibada cikin sauƙi.</p>
 </div>
-<div class="card"><h2> Alwala</h2>
-  <ol> 
-    <li>
-      <h3>Ruwa:</h3>
-      <p>Zaka samu ruwa mai tsarki mai tsarkakewa wato Sakekken Ruwa, Shine wanda Launinsa ko Ɗanɗanonsa ko Kamshinsa bai jirkitashi ba, Misalinsa: Ruwan Sama ko Ruwan Kogi ko Ruwan Fanfo ko na Rijiya d.s.s. Sai kayi tsarki (Idan da buƙata).</p>
-    </li>
-    <li>
-      <h3>Niyya:</h3>
-      <p>Sannan sai ka ƙudirci Niyya acikin Zuciyarka (Abin lura: Ba'a furta Niyya da baki wannan Bid'a ne, bashi da asali a Addini), Sai ka fara da Bismillah kace: "Bismillah".</p>
-    </li>
-    <li>
-      <h3>Wanke Hannu:</h3>
-      <p>Wanke hannu tare da tsatstsefe ƴan yatsunka sau 3, zaka fara da hannun dama sannan hannun hagu.</p>
-    </li>
-    <li>
-      <h3>kuskurar Baki/Shaƙa Ruwa:</h3>
-      <p>Sai ka kuskure bakinka tare da shaƙa ruwa a hancinka ka face sau 3, Shine ka zuba ruwa a bakinka ka kurkura Sannan sai ka zubar, Sannan ka shaƙa ragowar ruwan dake hannunka ka face (Abin lura: Bazaka sanya ɗan yatsanka ba a bakinka yayin kuskurar bakin, Wannan kuskure ne da ya shahara a kasar Hausa, domin idan kasan ɗan yatsa ka dirza Wankewa kenan, alhalin kuskura aka ce kayi, hakan kuma bashi da asali a Addini).</p>
-    </li>
-    <li>
-      <h3>Wanke Fuska:</h3>
-      <p>Sai wanke Fuska tin daga goshi matsirar gashi har zuwa gefen kunnuwanka na dama zuwa na hagu, loko-lokon idanuwanka duka, har zuwa haɓarka kana mai tsatstsefe gemunka idan mai yawa ne, zakayi haka sau 3.</p>
-    </li>
-    <li>
-      <h3>Wanke Hannu(Zira'i):</h3>
-      <p>Sannan sai ka wanke hannunka zuwa gwiwar hannu, kana mai dirza gwiwowin hannuwanka don ko'ina ya samu ruwan, zaka yi hakan sau 3, Zaka fara da hannun dama sannan hagu.</p>
-    </li>
-    <li>
-      <h3>Shafar Kai/Kunnuwa:</h3>
-      <p>Sai shafar kai tare da kunnuwanka, Yadda zakayi Zaka fara shafar tun daga matsirar gashin kanka zuwa ƙeyarka, Kunnuwa kuma zaka sanya ɗan yatsanka ɗan manuniya a cikin kunnuwanka, Sai ka bibbiyo lokunan cikin kunnenka har ka fito waje, Sannan ka sanya babban ɗan yatsanka ɗan manuniya ka shafo bayan kunnenka dashi.</p>
-    </li>
-    <li>
-      <h3>Wanke Ƙafafuwa:</h3>
-      <p>Sai ka wanke ƙafafuwanka zuwa idon sawu kana mai farawa da ƙafar dama sannan kafar hagu.</p>
-    </li>
-    <li>
-      <h3>Addu'a:</h3>
-      <p>Sai ka karanta Addu'ar gama Alwala sai kace:</p>
-      <p dir="rtl" lang="ar">أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.
-اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ، وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ.</p>
-      <p>Ma’ana: “Na shaida babu abin bautawa da gaskiya sai Allah Shi kaɗai, ba Shi da abokin tarayya. Kuma na shaida cewa Muhammadu bawansa ne kuma Manzonsa ne. Ya Allah! Ka sanya ni cikin masu yawan tuba, kuma Ka sanya ni cikin masu tsarkake kansu.”</p>
-    </li>
-  </ol>
-</div>
-<a href="index.html" style="display:block;text-align:center;background:#1a5c36;color:white;padding:15px;border-radius:10px;text-decoration:none;margin-top:20px">Koma Shafin Gida</a>
-</body>
-  </html>
 
+<div class="content">
+
+  <div class="card">
+    <h3>1. Ruwa</h3>
+    <p>Zaka samu ruwa mai tsarki mai tsarkakewa wato Sakekken Ruwa, Shine wanda Launinsa ko Ɗanɗanonsa ko Kamshinsa bai jirkitashi ba, Misalinsa: Ruwan Sama ko Ruwan Kogi ko Ruwan Fanfo ko na Rijiya d.s.s. Sai kayi tsarki (Idan da buƙata).</p>
+  </div>
+
+  <div class="card">
+    <h3>2. Niyya</h3>
+    <p>Sannan sai ka ƙudirci Niyya acikin Zuciyarka (Abin lura: Ba'a furta Niyya da baki wannan Bid'a ne, bashi da asali a Addini), Sai ka fara da Bismillah kace: <b>"Bismillah"</b>.</p>
+  </div>
+
+  <div class="card">
+    <h3>3. Wanke Hannu</h3>
+    <p>Wanke hannu tare da tsatstsefe ƴan yatsunka sau 3, zaka fara da hannun dama sannan hannun hagu.</p>
+  </div>
+
+  <div class="card">
+    <h3>4. Kuskurar Baki / Shaƙa Ruwa</h3>
+    <p>Sai ka kuskure bakinka tare da shaƙa ruwa a hancinka ka face sau 3, Shine ka zuba ruwa a bakinka ka kurkura Sannan sai ka zubar, Sannan ka shaƙa ragowar ruwan dake hannunka ka face.</p>
+    <div class="dark-box" style="background:#fef2f2; color:#991b1b; border-left:4px solid #c53030;">Abin lura: Bazaka sanya ɗan yatsanka ba a bakinka yayin kuskurar bakin, Wannan kuskure ne da ya shahara a kasar Hausa.</div>
+  </div>
+
+  <div class="card">
+    <h3>5. Wanke Fuska</h3>
+    <p>Sai wanke Fuska tin daga goshi matsirar gashi har zuwa gefen kunnuwanka na dama zuwa na hagu, loko-lokon idanuwanka duka, har zuwa haɓarka kana mai tsatstsefe gemunka idan mai yawa ne, zakayi haka sau 3.</p>
+  </div>
+
+  <div class="card">
+    <h3>6. Wanke Hannu (Zira'i)</h3>
+    <p>Sannan sai ka wanke hannunka zuwa gwiwar hannu, kana mai dirza gwiwowin hannuwanka don ko'ina ya samu ruwan, zaka yi hakan sau 3, Zaka fara da hannun dama sannan hagu.</p>
+  </div>
+
+  <div class="card">
+    <h3>7. Shafar Kai / Kunnuwa</h3>
+    <p>Sai shafar kai tare da kunnuwanka, Yadda zakayi Zaka fara shafar tun daga matsirar gashin kanka zuwa ƙeyarka, Kunnuwa kuma zaka sanya ɗan yatsanka ɗan manuniya a cikin kunnuwanka, Sai ka bibbiyo lokunan cikin kunnenka har ka fito waje, Sannan ka sanya babban ɗan yatsanka ka shafo bayan kunnenka dashi.</p>
+  </div>
+
+  <div class="card">
+    <h3>8. Wanke Ƙafafuwa</h3>
+    <p>Sai ka wanke ƙafafuwanka zuwa idon sawu kana mai farawa da ƙafar dama sannan kafar hagu.</p>
+  </div>
+
+  <div class="card">
+    <h3>9. Addu'a Bayan Alwala</h3>
+    <p>Sai ka karanta Addu'ar gama Alwala sai kace:</p>
+    <div class="ayah-box" dir="rtl" lang="ar" style="font-size:22px;">
+      أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.<br>
+      اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ، وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ.
+    </div>
+    <p style="margin-top:10px;"><b>Ma’ana:</b> “Na shaida babu abin bautawa da gaskiya sai Allah Shi kaɗai, ba Shi da abokin tarayya. Kuma na shaida cewa Muhammadu bawansa ne kuma Manzonsa ne. Ya Allah! Ka sanya ni cikin masu yawan tuba, kuma Ka sanya ni cikin masu tsarkake kansu.”</p>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html" class="btn-home">← Koma Shafin Gida</a>
+    <a href="#top" class="btn-top">↑ Koma Sama</a>
+  </div>
+
+</div>
+</body>
+</html>
